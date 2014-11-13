@@ -1,0 +1,11 @@
+Ok!Validado<br/>
+
+FORM:<br/>
+{{ form.nome.label}} {{form.nome.value}}<br/>
+{{form.enderecoBusca.label}} {{form.enderecoBusca.value}}<br/>
+<br/>
+{{form.nome}}<br/><br/>
+
+{% for corridas in corridas %}
+- {{corridas.nome}} {{corridas.enderecoBusca}}<br/>
+{% endfor %}
